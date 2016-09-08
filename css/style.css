@@ -8,12 +8,6 @@ img {
   border: none;
   width: 100%; }
 
-ul {
-  /*letter-spacing: -1em; /* Effectively collapses white-space */ }
-
-ul li {
-  /* letter-spacing: normal;*/ }
-
 .zagolovok {
   font-size: 2.8em;
   line-height: 1em;
@@ -212,12 +206,6 @@ body {
 .top-menu-box {
   min-height: 30px;
   background: #009123; }
-
-.top-menu__flex {
-  	/* @include flexbox(row, wrap);
-      justify-content: flex-end;
-      align-content:flex-end;
-      align-items: center;*/ }
 
 .top-menu__items {
   float: right;
