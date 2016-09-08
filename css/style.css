@@ -117,12 +117,12 @@ html {
   min-height: 100%; }
 
 body {
-  background: #fefefe;
+  background: yellow;
   font: 14px/1.3em Roboto, sans-serif;
   color: #000; }
 
 .section_white {
-  background: white; }
+  background: yellow; }
 
 .base-block__column-left {
   flex: 1 1 50%;
@@ -309,7 +309,7 @@ li.breadcrumb__active {
 
 /*HEADER*/
 .header-box {
-  background: white;
+  background: #d9ffe3;
   min-height: 50px;
   padding: 2px 0; }
   @media (max-width: 910px) {
