@@ -694,9 +694,6 @@ li.breadcrumb__active {
   margin: auto;
   /*border-bottom: 2px solid #FFD608;*/ }
 
-.base-block__icons img {
-  width: 100%; }
-
 .opinion-box {
   min-height: 600px; }
 
