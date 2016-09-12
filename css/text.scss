@@ -1,0 +1,127 @@
+a {
+	text-decoration: none;
+	color: $dark-gray;
+}
+
+img {
+	vertical-align: middle;
+	border: none;
+	width: 100%;
+}
+
+ul {
+	/*letter-spacing: -1em; /* Effectively collapses white-space */
+}
+
+ul li {
+	/* letter-spacing: normal;*/
+}
+
+p {}
+.zagolovok {
+	font-size: 2.8em;
+	line-height: 1em;
+	text-align: center;
+	margin: 0 auto 30px;
+	display: inline-block;
+	min-width: 100%;
+	color: $dark-gray;
+}
+
+.podzagolovok {
+	font-size: 1.5em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 30px auto;
+	display: inline-block;
+	min-width: 100%;
+	color: $dark-gray;
+}
+
+.podzagolovok_left {
+	text-align: left;
+	margin: 10px auto;
+}
+
+.zagolovok_blue {
+	font-size: 3em;
+	line-height: 1em;
+	text-align: center;
+	margin: 40px auto;
+	display: inline-block;
+	min-width: 100%;
+	color: $blue;
+}
+
+.zagolovok_white {
+	color: white;
+}
+
+.block__text {
+	flex-basis: 100%;
+	height: 200px;
+}
+.link {
+	text-decoration: none;
+	transition: all .4s;
+}
+
+.link__white {
+	color: white;
+}
+
+
+/*.link__green{
+	text-decoration: none;
+	transition: text-decoration .4s;
+}*/
+
+.link:hover {
+	text-decoration: underline;
+}
+
+.link__green:hover {
+	color: $green;
+}
+
+.table__link {
+	margin: 10px 2px 0;
+	display: inline-block;
+	text-decoration: underline;
+}
+.header__zagolovok {
+	display: block;
+	@include text(3em,
+	1.5em);
+	margin-top: 40px;
+	font-weight: bold;
+	color: $dark-gray;
+	@media (max-width: $planshet) {
+		margin: 10px auto 0;
+		text-align: center;
+		@include text(2.5em,
+		1.5em);
+	}
+	@media (max-width: $phone) {
+		margin: 10px auto 0;
+		text-align: center;
+		@include text(2em,
+		1.5em);
+	}
+}
+
+.zagolovok_magenta {
+	color: $magenta;
+}
+
+.zagolovok_green {
+	color: $green;
+}
+
+.color_white {
+	color: white;
+}
+
+.header__spisok {
+	color: $dark-gray;
+}
