@@ -77,7 +77,7 @@ ul li {
 .header__zagolovok {
   display: block;
   opacity: 0;
-  transition: all 1s;
+  transition: opacity 1.4s;
   font-size: 3em;
   line-height: 1.5em;
   margin-top: 40px;
@@ -147,7 +147,7 @@ body {
       flex: 1 1 100%; } }
 
 .hr {
-  transition: all 1.4s;
+  transition: opacity 1.4s;
   opacity: 0;
   flex: 0 0 100%;
   height: 20px;
@@ -357,7 +357,7 @@ li.breadcrumb__active {
   height: auto;
   width: 340px;
   opacity: 0;
-  transition: all 1.4s; }
+  transition: opacity 1.4s; }
   @media (max-width: 910px) {
     .header__logo {
       margin: 20px auto;
@@ -369,7 +369,7 @@ li.breadcrumb__active {
 
 .header__phone {
   display: block;
-  transition: all 1.4s;
+  transition: opacity 1.4s;
   opacity: 0;
   text-align: right;
   margin: 20px auto;
@@ -386,12 +386,15 @@ li.breadcrumb__active {
   color: #009123; }
 
 .header__phone:before {
-  content: url("../images/icons-mail.png");
+  content: url("../images/icons_mail.svg");
   margin: 0 8px 0 0;
   display: inline-block;
   vertical-align: -17%;
   width: 26px;
   height: 20px; }
+  @media (max-width: 910px) {
+    .header__phone:before {
+      vertical-align: -15%; } }
 
 /*OFFER*/
 .offer-box {
@@ -413,7 +416,7 @@ li.breadcrumb__active {
 
 .offer__img {
   opacity: 0;
-  transition: all 1.4s;
+  transition: opacity 1.4s;
   margin-top: 60px;
   max-width: 500px; }
   @media (max-width: 910px) {
@@ -426,7 +429,7 @@ li.breadcrumb__active {
 
 .offer__spisok-block {
   opacity: 0;
-  transition: all 1.4s;
+  transition: opacity 1.4s;
   width: 100%;
   margin: 0 0 0 20px; }
   @media (max-width: 600px) {
@@ -455,12 +458,12 @@ li.breadcrumb__active {
       margin-top: 20px; } }
 
 .offer__strelka {
-  transition: all 1.4s;
+  transition: opacity 1.4s;
   opacity: 0;
   flex: 0 0 50px;
   height: 50px;
   margin: auto;
-  background: url("../images/strelka-h.png") no-repeat; }
+  background: url("../images/down_arrow.svg") no-repeat; }
   @media (max-width: 910px) {
     .offer__strelka {
       display: none; } }
@@ -468,7 +471,7 @@ li.breadcrumb__active {
 /*forms*/
 .form-box {
   opacity: 0;
-  transition: all 1.4s;
+  transition: opacity 1.4s;
   background: url("../images/forma_fon.png") repeat-x;
   max-width: 100%;
   min-height: 420px;

@@ -17,7 +17,7 @@ $magenta: #F5001F;
 $light-magenta: #F5001F + #fff;
 $light-magenta: #ff9fab;
 $dark-magenta: #980012;
-$transition:all 1.4s;
+$transition:opacity 1.4s;
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,900,700);
 
 @mixin border() {
@@ -393,12 +393,15 @@ li.breadcrumb__active {
 }
 
 .header__phone:before {
-	content: url("../images/icons-mail.png");
+	content: url("../images/icons_mail.svg");
 	margin: 0 8px 0 0;
 	display: inline-block;
 	vertical-align: -17%;
 	width: 26px;
 	height: 20px;
+	@media (max-width: $planshet) {
+	vertical-align: -15%;
+	}
 }
 
 
@@ -474,7 +477,7 @@ li.breadcrumb__active {
 	flex: 0 0 50px;
 	height: 50px;
 	margin: auto;
-	background: url("../images/strelka-h.png") no-repeat;
+	background: url("../images/down_arrow.svg") no-repeat;
 	@media (max-width: $planshet) {
 		display: none;
 	}
