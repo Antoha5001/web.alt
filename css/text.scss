@@ -91,6 +91,8 @@ p {}
 }
 .header__zagolovok {
 	display: block;
+	opacity: 0;
+	transition: all 1s;
 	@include text(3em,
 	1.5em);
 	margin-top: 40px;

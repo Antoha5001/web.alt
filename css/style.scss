@@ -17,6 +17,7 @@ $magenta: #F5001F;
 $light-magenta: #F5001F + #fff;
 $light-magenta: #ff9fab;
 $dark-magenta: #980012;
+$transition:all 1s;
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,900,700);
 
 @mixin border() {
@@ -55,6 +56,7 @@ $dark-magenta: #980012;
 }
 
 @import "text";
+
 * {
 	margin: 0;
 	padding: 0;
@@ -355,6 +357,8 @@ li.breadcrumb__active {
 	margin: 20px 0;
 	height: auto;
 	width: 340px;
+	opacity: 0;
+	transition: $transition;
 	//background: url("../images/logo.svg") no-repeat;
 	@media (max-width: $planshet) {
 		margin: 20px auto;
@@ -367,7 +371,9 @@ li.breadcrumb__active {
 }
 
 .header__phone {
+	transition: $transition;
 	display: block;
+	opacity: 0;
 	text-align: right;
 	margin: 20px auto;
 	font-size: 1.5em;
@@ -414,6 +420,8 @@ li.breadcrumb__active {
 }
 
 .offer__img {
+	opacity: 0;
+	transition: $transition;
 	margin-top: 60px;
 	max-width: 500px;
 	@media (max-width: $planshet) {
@@ -426,6 +434,8 @@ li.breadcrumb__active {
 }
 
 .offer__spisok-block {
+	opacity: 0;
+	transition: $transition;
 	width: 100%;
 	margin: 0 0 0 20px;
 	@media (max-width: $phone) {
@@ -470,6 +480,8 @@ li.breadcrumb__active {
 /*forms*/
 
 .form-box {
+	opacity: 0;
+	transition: $transition;
 	background: url("../images/forma_fon.png") repeat-x;
 	max-width: 100%;
 	min-height: 420px;

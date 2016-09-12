@@ -76,6 +76,8 @@ ul li {
 
 .header__zagolovok {
   display: block;
+  opacity: 0;
+  transition: all 1s;
   font-size: 3em;
   line-height: 1.5em;
   margin-top: 40px;
@@ -351,7 +353,9 @@ li.breadcrumb__active {
   display: block;
   margin: 20px 0;
   height: auto;
-  width: 340px; }
+  width: 340px;
+  opacity: 0;
+  transition: all 1s; }
   @media (max-width: 910px) {
     .header__logo {
       margin: 20px auto;
@@ -362,7 +366,9 @@ li.breadcrumb__active {
       width: calc(100% - 10px); } }
 
 .header__phone {
+  transition: all 1s;
   display: block;
+  opacity: 0;
   text-align: right;
   margin: 20px auto;
   font-size: 1.5em;
@@ -404,6 +410,8 @@ li.breadcrumb__active {
       flex: 1 1 100%; } }
 
 .offer__img {
+  opacity: 0;
+  transition: all 1s;
   margin-top: 60px;
   max-width: 500px; }
   @media (max-width: 910px) {
@@ -415,6 +423,8 @@ li.breadcrumb__active {
       margin: 30px auto 0; } }
 
 .offer__spisok-block {
+  opacity: 0;
+  transition: all 1s;
   width: 100%;
   margin: 0 0 0 20px; }
   @media (max-width: 600px) {
@@ -453,6 +463,8 @@ li.breadcrumb__active {
 
 /*forms*/
 .form-box {
+  opacity: 0;
+  transition: all 1s;
   background: url("../images/forma_fon.png") repeat-x;
   max-width: 100%;
   min-height: 420px;
