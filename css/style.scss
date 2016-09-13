@@ -122,7 +122,6 @@ body {
 	/*background: #fff; */
 	max-width: 100%;
 	margin: 0 auto -600px;
-	background: url("../images/fon.png") white;
 	min-height: 100%;
 }
 
@@ -409,6 +408,7 @@ li.breadcrumb__active {
 
 .offer-box {
 	min-height: 850px;
+	background: url("../images/fon.png") white;
 }
 
 .offer {
@@ -711,6 +711,8 @@ li.breadcrumb__active {
 }
 
 .base-block__item {
+	opacity: 0;
+	transition: $transition;
 	flex: 1 1 150px;
 	min-height: 100px;
 	margin: 30px 10px 0;
