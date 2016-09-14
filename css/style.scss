@@ -922,9 +922,10 @@ li.breadcrumb__active {
 	background: $dark-gray;
 	flex: 1 1 100%;
 	margin: 0;
-	height: 120px;
+	min-height: 120px;
 	overflow: hidden;
 	color: #6762ba;
+	padding: 20px 0;
 	/*align-self: flex-start;*/
 }
 .footer__relative {
@@ -947,6 +948,14 @@ li.breadcrumb__active {
 	top:50%;
 	margin-top: -16px;
 	right: 20px;
+	@media (max-width: $planshet) {
+	position:relative;
+	margin: auto;
+	display: block;
+	top:0;
+	right: 0;
+	margin-top:20px;
+	}
 }
 
 
@@ -1129,10 +1138,6 @@ li.breadcrumb__active {
 	display: inline;
 }
 
-.footer__zagolovok {
-	color: #fff;
-	display: block;
-}
 
 .hidden {
 	display: none;
@@ -1180,4 +1185,7 @@ li.breadcrumb__active {
 }
 .is-visible{
 	opacity: 1;
+}
+.no-visible{
+	opacity: 0;
 }
