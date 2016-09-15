@@ -121,13 +121,14 @@ body {
 .main {
 	/*background: #fff; */
 	max-width: 100%;
-	margin: 0 auto -600px;
+	margin: 0 auto -480px;
+	background: white;
 	min-height: 100%;
 }
 
 
 .all {
-	padding: 0 0 600px;
+	padding: 0 0 480px;
 }
 
 .conteiner {
@@ -601,18 +602,17 @@ li.breadcrumb__active {
 /*forms bottom*/
 
 .form-box-bottom__block {
-	background: /*url("../images/forms.png")*/
-	$black;
+	background: url('/images/footer_bg.png') $black;
 	color: #fff;
 	/* align-self: flex-end;*/
-	min-height: 520px;
-	padding-bottom: 20px;
+	min-height: 350px;
+	padding: 10px;
 	//@include shadow();
 }
 
 .form-box__bottom {
 	margin-top: 0;
-	background: $gray;
+	background:  rgba(0,0,0,0.3);
 	width: 100%;
 	min-height: 40px;
 	@include bradius(3px);
@@ -679,7 +679,6 @@ li.breadcrumb__active {
 }
 
 .form-box-bottom__input-name {
-	color: $dark-gray;
 	display: block;
 	padding: 2px 0;
 	width: 100%;
@@ -920,10 +919,10 @@ li.breadcrumb__active {
 /*---FOOTER---*/
 
 .footer {
-	background: $dark-gray;
+	background: url('/images/footer_bg.png') $dark-gray;
 	flex: 1 1 100%;
 	margin: 0;
-	min-height: 120px;
+	min-height: 80px;
 	overflow: hidden;
 	color: #6762ba;
 	padding: 20px 0;
