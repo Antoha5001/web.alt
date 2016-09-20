@@ -69,9 +69,6 @@ html {
 	height: 100%;
 }
 
-conteiner2{
-	min-height: 100%;
-}
 .main {
 	min-height: 100%;
 }
@@ -177,11 +174,8 @@ body {
 /*TOP-MENU*/
 
 .top-menu-box {
-	height: 30px;
+	min-height: 30px;
 	background: $green;
-	@media (max-width: $planshet) {
-		height: auto;
-	}
 }
 
 .top-menu__flex {
@@ -328,11 +322,10 @@ li.breadcrumb__active {
 
 .header-box {
 	background: white;
-	height: 128px;
+	min-height: 50px;
 	padding: 2px 0;
 	// @include shadowb();
 	@media (max-width: $planshet) {
-		height: auto;
 		min-height: 100px;
 	}
 }
@@ -590,13 +583,9 @@ li.breadcrumb__active {
 	background: url('/images/footer_bg.png') $black;
 	color: #fff;
 	/* align-self: flex-end;*/
-	height: 480px;
+	min-height: 480px;
 	padding-bottom: 10px;
 	//@include shadow();
-	@media (max-width: $planshet) {
-	height: auto;
-		
-	}
 }
 
 .form-box__bottom {
@@ -910,14 +899,9 @@ li.breadcrumb__active {
 	background: url('/images/footer_bg.png') $dark-gray;
 	flex: 1 1 100%;
 	margin: 0;
-	height: 80px;
+	min-height: 80px;
 	overflow: hidden;
 	color: #6762ba;
-	@media (max-width: $planshet) {
-		height: auto;
-		text-align: center;
-		padding:10px;
-	}
 	/*align-self: flex-start;*/
 }
 .footer__relative {
@@ -941,18 +925,15 @@ li.breadcrumb__active {
 	margin-top: -16px;
 	right: 20px;
 	@media (max-width: $planshet) {
-	position: relative;
+	position:relative;
 		display: block;
 		margin: auto;
 		top: 0;
 		right: 0;
+	margin-top: 0;
 	}
 }
 
-.footer__zagolovok {
-	color: #fff;
-	display: block;
-}
 
 /*
 .conteiner{
@@ -1133,6 +1114,10 @@ li.breadcrumb__active {
 	display: inline;
 }
 
+.footer__zagolovok {
+	color: #fff;
+	display: block;
+}
 
 .hidden {
 	display: none;
