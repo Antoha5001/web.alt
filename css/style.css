@@ -115,9 +115,11 @@ ul li {
   -moz-box-sizing: border-box; }
 
 body,
-conteiner2,
 html {
   height: 100%; }
+
+conteiner2 {
+  min-height: 100%; }
 
 .main {
   min-height: 100%; }
@@ -157,12 +159,12 @@ body {
 .main {
   /*background: #fff; */
   max-width: 100%;
-  margin: 0 auto -451px;
+  margin: 0 auto -560px;
   background: url("../images/fon.png") white;
   min-height: 100%; }
 
 .all {
-  padding: 0 0 480px; }
+  padding: 0 0 560px; }
 
 .conteiner {
   max-width: 1000px;
@@ -854,7 +856,9 @@ li.breadcrumb__active {
   /*align-self: flex-start;*/ }
   @media (max-width: 910px) {
     .footer {
-      height: auto; } }
+      height: auto;
+      text-align: center;
+      padding: 10px; } }
 
 .footer__relative {
   position: relative;
@@ -874,6 +878,17 @@ li.breadcrumb__active {
   top: 50%;
   margin-top: -16px;
   right: 20px; }
+  @media (max-width: 910px) {
+    .footer__metrika {
+      position: relative;
+      display: block;
+      margin: auto;
+      top: 0;
+      right: 0; } }
+
+.footer__zagolovok {
+  color: #fff;
+  display: block; }
 
 /*
 .conteiner{
@@ -1033,10 +1048,6 @@ li.breadcrumb__active {
 .opinion-box__opinion_bold {
   font-weight: bold;
   display: inline; }
-
-.footer__zagolovok {
-  color: #fff;
-  display: block; }
 
 .hidden {
   display: none; }

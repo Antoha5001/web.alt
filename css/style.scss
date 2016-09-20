@@ -65,11 +65,13 @@ $dark-magenta: #980012;
 }
 
 body,
-conteiner2,
 html {
 	height: 100%;
 }
 
+conteiner2{
+	min-height: 100%;
+}
 .main {
 	min-height: 100%;
 }
@@ -117,13 +119,13 @@ body {
 .main {
 	/*background: #fff; */
 	max-width: 100%;
-	margin: 0 auto -451px;
+	margin: 0 auto -560px;
 	background: url("../images/fon.png") white;
 	min-height: 100%;
 }
 
 .all {
-	padding: 0 0 480px;
+	padding: 0 0 560px;
 }
 
 .conteiner {
@@ -912,7 +914,9 @@ li.breadcrumb__active {
 	overflow: hidden;
 	color: #6762ba;
 	@media (max-width: $planshet) {
-		height: auto
+		height: auto;
+		text-align: center;
+		padding:10px;
 	}
 	/*align-self: flex-start;*/
 }
@@ -936,8 +940,19 @@ li.breadcrumb__active {
 	top:50%;
 	margin-top: -16px;
 	right: 20px;
+	@media (max-width: $planshet) {
+	position: relative;
+		display: block;
+		margin: auto;
+		top: 0;
+		right: 0;
+	}
 }
 
+.footer__zagolovok {
+	color: #fff;
+	display: block;
+}
 
 /*
 .conteiner{
@@ -1118,10 +1133,6 @@ li.breadcrumb__active {
 	display: inline;
 }
 
-.footer__zagolovok {
-	color: #fff;
-	display: block;
-}
 
 .hidden {
 	display: none;
