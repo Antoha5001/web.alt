@@ -410,11 +410,7 @@ li.breadcrumb__active {
 
 .offer-box {
 	min-height: 850px;
-<<<<<<< HEAD
-	background: url("../images/fon.png") white;
-=======
 	background:  url("../images/fon.png") ;
->>>>>>> refs/remotes/origin/master
 }
 
 .offer {
@@ -932,15 +928,11 @@ li.breadcrumb__active {
 	min-height: 80px;
 	overflow: hidden;
 	color: #6762ba;
-<<<<<<< HEAD
 	padding: 20px 0;
-	/*align-self: flex-start;*/
-=======
 	@media (max-width: $planshet) {
 		text-align: center;
 		padding: 10px;
 	}
->>>>>>> refs/remotes/origin/master
 }
 .footer__relative {
 	position: relative;
@@ -964,19 +956,11 @@ li.breadcrumb__active {
 	right: 20px;
 	@media (max-width: $planshet) {
 	position:relative;
-<<<<<<< HEAD
 	margin: auto;
 	display: block;
 	top:0;
 	right: 0;
 	margin-top:20px;
-=======
-		display: block;
-		margin: auto;
-		top: 0;
-		right: 0;
-	margin-top: 0;
->>>>>>> refs/remotes/origin/master
 	}
 }
 
