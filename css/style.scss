@@ -1,3 +1,4 @@
+$otstup:560px;
 $planshet: 910px;
 $phone: 600px;
 $blue: #00478a;
@@ -121,14 +122,14 @@ body {
 .main {
 	/*background: #fff; */
 	max-width: 100%;
-	margin: 0 auto -480px;
+	margin: 0 auto -560px;
 	background: white;
 	min-height: 100%;
 }
 
 
 .all {
-	padding: 0 0 480px;
+	padding: 0 0 560px;
 }
 
 .conteiner {
@@ -602,12 +603,15 @@ li.breadcrumb__active {
 /*forms bottom*/
 
 .form-box-bottom__block {
-	background: url('/images/footer_bg.png') $black;
+	background: url('../images/footer_bg.png') $black;
 	color: #fff;
 	/* align-self: flex-end;*/
-	min-height: 350px;
+	height: 480px;
 	padding: 10px;
 	//@include shadow();
+	@media (max-width: $planshet) {
+		height: auto;
+	}
 }
 
 .form-box__bottom {
@@ -919,7 +923,7 @@ li.breadcrumb__active {
 /*---FOOTER---*/
 
 .footer {
-	background: url('/images/footer_bg.png') $dark-gray;
+	background: url('../images/footer_bg.png') $dark-gray;
 	flex: 1 1 100%;
 	margin: 0;
 	min-height: 80px;

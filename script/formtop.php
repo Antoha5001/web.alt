@@ -9,10 +9,8 @@
 		$zag = "Нижняя форма";
 		$fname = "Имя: ".trim(strip_tags($_POST["name"]))."<br>";
 		$phone = "Телефон: ".trim(strip_tags($_POST["tel"]))."<br>";
-		$email = "email: ".trim(strip_tags($_POST["email"]))."<br>";
-		$mess = "Сообщение: ".trim(strip_tags($_POST["message"]))."<br>";
 		$headers = 'Content-type: text/html; charset=utf-8';
-		mail($to,"$zag","$host $remoteip $fname $phone $email $mess","$headers");
+		mail($to,"$zag","$host $remoteip $fname $phone","$headers");
 		//header("Location: ".$_SERVER['PHP_SELF']);
 		header("Location: ../index.php");
 }
