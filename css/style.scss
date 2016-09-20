@@ -117,7 +117,7 @@ body {
 	/*background: #fff; */
 	max-width: 100%;
 	margin: 0 auto -560px;
-	background: url("../images/fon.png") white;
+	background: white;
 	min-height: 100%;
 }
 
@@ -397,6 +397,7 @@ li.breadcrumb__active {
 
 .offer-box {
 	min-height: 850px;
+	background:  url("../images/fon.png") ;
 }
 
 .offer {
