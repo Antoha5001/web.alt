@@ -157,7 +157,7 @@ body {
 .main {
   /*background: #fff; */
   max-width: 100%;
-  margin: 0 auto -480px;
+  margin: 0 auto -451px;
   background: url("../images/fon.png") white;
   min-height: 100%; }
 
@@ -210,8 +210,11 @@ body {
 
 /*TOP-MENU*/
 .top-menu-box {
-  min-height: 30px;
+  height: 30px;
   background: #009123; }
+  @media (max-width: 910px) {
+    .top-menu-box {
+      height: auto; } }
 
 .top-menu__flex {
   	/* @include flexbox(row, wrap);
@@ -322,10 +325,11 @@ li.breadcrumb__active {
 /*HEADER*/
 .header-box {
   background: white;
-  min-height: 50px;
+  height: 128px;
   padding: 2px 0; }
   @media (max-width: 910px) {
     .header-box {
+      height: auto;
       min-height: 100px; } }
 
 .header__top {
@@ -558,8 +562,11 @@ li.breadcrumb__active {
   background: url("/images/footer_bg.png") #1A1A1A;
   color: #fff;
   /* align-self: flex-end;*/
-  min-height: 480px;
+  height: 480px;
   padding-bottom: 10px; }
+  @media (max-width: 910px) {
+    .form-box-bottom__block {
+      height: auto; } }
 
 .form-box__bottom {
   margin-top: 0;
@@ -841,10 +848,13 @@ li.breadcrumb__active {
   background: url("/images/footer_bg.png") #202020;
   flex: 1 1 100%;
   margin: 0;
-  min-height: 80px;
+  height: 80px;
   overflow: hidden;
   color: #6762ba;
   /*align-self: flex-start;*/ }
+  @media (max-width: 910px) {
+    .footer {
+      height: auto; } }
 
 .footer__relative {
   position: relative;
