@@ -65,7 +65,6 @@ $dark-magenta: #980012;
 }
 
 body,
-conteiner2,
 html {
 	height: 100%;
 }
@@ -117,13 +116,13 @@ body {
 .main {
 	/*background: #fff; */
 	max-width: 100%;
-	margin: 0 auto -480px;
-	background: url("../images/fon.png") white;
+	margin: 0 auto -560px;
+	background: white;
 	min-height: 100%;
 }
 
 .all {
-	padding: 0 0 480px;
+	padding: 0 0 560px;
 }
 
 .conteiner {
@@ -398,6 +397,7 @@ li.breadcrumb__active {
 
 .offer-box {
 	min-height: 850px;
+	background:  url("../images/fon.png") ;
 }
 
 .offer {
@@ -581,7 +581,7 @@ li.breadcrumb__active {
 /*forms bottom*/
 
 .form-box-bottom__block {
-	background: url('/images/footer_bg.png') $black;
+	background: url('../images/footer_bg.png') $black;
 	color: #fff;
 	/* align-self: flex-end;*/
 	min-height: 480px;
@@ -897,13 +897,16 @@ li.breadcrumb__active {
 /*---FOOTER---*/
 
 .footer {
-	background: url('/images/footer_bg.png') $dark-gray;
+	background: url('../images/footer_bg.png') $dark-gray;
 	flex: 1 1 100%;
 	margin: 0;
 	min-height: 80px;
 	overflow: hidden;
 	color: #6762ba;
-	/*align-self: flex-start;*/
+	@media (max-width: $planshet) {
+		text-align: center;
+		padding: 10px;
+	}
 }
 .footer__relative {
 	position: relative;
@@ -925,6 +928,14 @@ li.breadcrumb__active {
 	top:50%;
 	margin-top: -16px;
 	right: 20px;
+	@media (max-width: $planshet) {
+	position:relative;
+		display: block;
+		margin: auto;
+		top: 0;
+		right: 0;
+	margin-top: 0;
+	}
 }
 
 
