@@ -39,7 +39,7 @@ $(document).ready(function(){
 				},timer * (e+1));
 			});
 		}
-		if(wScroll>browserBox.offset().top - ($(window).height()/1.6)){
+		if(wScroll>browserBox.offset().top - ($(window).height()/1.4)){
 			browserItem.each(function(e){
 				setTimeout(function(){	
 					browserItem.eq(e).addClass('is-visible');

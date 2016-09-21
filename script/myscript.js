@@ -34,7 +34,12 @@ var $dark_green2 = "#3fac72";
     });
   });
 });*/
-$(document).ready(function(){	 
+$(document).ready(function(){	
+	
+	$(".offer__strelka").on("click", function(){
+		var sectionTop = $(".tools-box").offset().top;
+		$('body, html').animate({scrollTop:sectionTop},500);
+	});
 	
 	$(".popup_button").magnificPopup();
 	

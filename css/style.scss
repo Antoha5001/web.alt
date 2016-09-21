@@ -475,14 +475,21 @@ li.breadcrumb__active {
 }
 
 .offer__strelka {
-	transition: $transition;
+	display: block;
+	transition: all .5s;
+	cursor: pointer;
 	opacity: 0;
 	flex: 0 0 50px;
 	height: 50px;
 	margin: auto;
+	border-radius: 50%;
 	background: url("../images/down_arrow.svg") no-repeat;
 	@media (max-width: $planshet) {
 		display: none;
+	}
+	&:hover{
+		background-color: rgba(255,255,255,.8);
+		transform: scale(1.1);
 	}
 }
 
@@ -557,14 +564,15 @@ li.breadcrumb__active {
 	@include bradius(3px);
 	font-weight: bold;
 	font-size: 18px;
-	transition: background 1s;
+	transition: all .4s;
+	box-shadow: 0 0 0 0 rgba(0,0,0,0.5);
 	@media (max-width: $planshet) {}
+	&:hover{
+		background: $lite-green;
+		transform: scale(1.1) translate(0, -5px);
+		box-shadow: 0 15px 10px -8px rgba(0,0,0,0.5);
+	}
 }
-
-.form-box__submit:hover {
-	background: $lite-green;
-}
-
 .form-box__input {
 	background: #fff;
 	display: block;
@@ -574,7 +582,9 @@ li.breadcrumb__active {
 	height: 30px;
 	border: 1px solid #ccc;
 	@include bradius(3px);
-	@media (max-width: $planshet) {}
+	&:focus{
+		outline: $green auto 3px;
+	}
 }
 
 .form-box__input-name {
@@ -775,6 +785,7 @@ li.breadcrumb__active {
 .portfolio-box {
 	min-height: 75px;
 	background: white;
+	padding: 20px 0 40px;
 }
 
 .portfolio-box_gray {
@@ -878,7 +889,7 @@ li.breadcrumb__active {
 
 .table-box {
 	background: white;
-	padding: 10px;
+	padding: 20px 0 20px;
 }
 
 .table {
@@ -1033,14 +1044,15 @@ li.breadcrumb__active {
 	left: 50%;
 	transition: background .5s;
 	@include bradius(3px);
+	transition: all .4s;
+	box-shadow: 0 0 0 0 rgba(0,0,0,0.5);
 	@media (max-width: $planshet) {}
+	&:hover{
+		background: $lite-green;
+		transform: scale(1.1) translate(0, -5px);
+		box-shadow: 0 15px 10px -8px rgba(0,0,0,0.5);
+	}
 }
-
-.button:hover {
-	background: $lite-green;
-}
-
-
 
 .base-block__zagolovok {
 	padding: 0 10px;

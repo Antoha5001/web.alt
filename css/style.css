@@ -467,15 +467,21 @@ li.breadcrumb__active {
       margin-top: 20px; } }
 
 .offer__strelka {
-  transition: opacity 1.4s;
+  display: block;
+  transition: all .5s;
+  cursor: pointer;
   opacity: 0;
   flex: 0 0 50px;
   height: 50px;
   margin: auto;
+  border-radius: 50%;
   background: url("../images/down_arrow.svg") no-repeat; }
   @media (max-width: 910px) {
     .offer__strelka {
       display: none; } }
+  .offer__strelka:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.1); }
 
 /*forms*/
 .form-box {
@@ -544,10 +550,12 @@ li.breadcrumb__active {
   -moz-border-radius: 3px;
   font-weight: bold;
   font-size: 18px;
-  transition: background 1s; }
-
-.form-box__submit:hover {
-  background: #1ab73d; }
+  transition: all .4s;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5); }
+  .form-box__submit:hover {
+    background: #1ab73d;
+    transform: scale(1.1) translate(0, -5px);
+    box-shadow: 0 15px 10px -8px rgba(0, 0, 0, 0.5); }
 
 .form-box__input {
   background: #fff;
@@ -560,6 +568,8 @@ li.breadcrumb__active {
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px; }
+  .form-box__input:focus {
+    outline: #009123 auto 3px; }
 
 .form-box__input-name {
   color: #202020;
@@ -742,7 +752,8 @@ li.breadcrumb__active {
 /* PORTFOLIO*/
 .portfolio-box {
   min-height: 75px;
-  background: white; }
+  background: white;
+  padding: 20px 0 40px; }
 
 .portfolio-box_gray {
   background: #202020; }
@@ -831,7 +842,7 @@ li.breadcrumb__active {
 /*TABLE-BOX*/
 .table-box {
   background: white;
-  padding: 10px; }
+  padding: 20px 0 20px; }
 
 .table {
   margin: auto; }
@@ -968,10 +979,13 @@ li.breadcrumb__active {
   transition: background .5s;
   border-radius: 3px;
   -webkit-border-radius: 3px;
-  -moz-border-radius: 3px; }
-
-.button:hover {
-  background: #1ab73d; }
+  -moz-border-radius: 3px;
+  transition: all .4s;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5); }
+  .button:hover {
+    background: #1ab73d;
+    transform: scale(1.1) translate(0, -5px);
+    box-shadow: 0 15px 10px -8px rgba(0, 0, 0, 0.5); }
 
 .base-block__zagolovok {
   padding: 0 10px;
