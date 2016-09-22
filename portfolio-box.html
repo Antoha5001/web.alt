@@ -3,25 +3,31 @@
 <html>
 <head>
 	<title>Заголовок</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<meta name="keywords" content=""/>
-	<meta name="description" content=""/>
-	<meta name="author" content=""/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<script src="https://yastatic.net/jquery/2.2.0/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="script/jquery.js"><\/script>')</script>
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+	<script>
+		window.jQuery || document.write('<script src="script/jquery.js"><\/script>')
+	</script>
+	<script src="script/myscript.js"></script>
 	<script src="script/jquery.validate.min.js"></script>
 	<script src="script/wow.min.js"></script>
 	<script src="script/jquery.magnific-popup.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css"/>
-	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css" />
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -32,50 +38,52 @@
 	<link rel="stylesheet" href="/reject/reject.css" media="all" />
 	<script type="text/javascript" src="reject/reject.min.js"></script>
 	<![endif]-->
-	<script>new WOW().init();</script>
+	<script>
+		new WOW().init();
+	</script>
 	<script type="text/javascript">
-   $(document).ready(function(){
-		$("#popup").validate({
-			rules:{
-				name:{
-						required:true,
-						maxlength:16,
+		$(document).ready(function () {
+			$("#popup").validate({
+				rules: {
+					name: {
+						required: true,
+						maxlength: 16,
 					},
-				tel:{
-						required:true,
-				},
-			},
-			messages:{
-				name:{
-						required:"Это поле обязательно для заполнения",
+					tel: {
+						required: true,
 					},
-				tel:{
-						required:"Это поле обязательно для заполнения",
 				},
-			}
+				messages: {
+					name: {
+						required: "Это поле обязательно для заполнения",
+					},
+					tel: {
+						required: "Это поле обязательно для заполнения",
+					},
+				}
+			});
+			$("#top_form").validate({
+				rules: {
+					name: {
+						required: true,
+						maxlength: 16,
+					},
+					email: {
+						required: true,
+					},
+				},
+				messages: {
+					name: {
+						required: "Это поле обязательно для заполнения",
+					},
+					email: {
+						required: "Это поле обязательно для заполнения",
+						email: "Введите верный email адрес",
+					},
+				}
+			});
 		});
-		$("#top_form").validate({
-			rules:{
-				name:{
-						required:true,
-						maxlength:16,
-					},
-				email:{
-						required:true,
-				},
-			},
-			messages:{
-				name:{
-						required:"Это поле обязательно для заполнения",
-					},
-				email:{
-						required:"Это поле обязательно для заполнения",
-						email:"Введите верный email адрес",
-				},
-			}
-		});
-   });
-</script>
+	</script>
 </head>
 
 <body>
@@ -93,28 +101,34 @@
 <div class="conteiner2">
     <div class="main">
         <div class="all">
-            <section class="header-box">
-            <div class="conteiner conteiner_flex">
-                <div class="header__top-cols wow fadeIn" data-wow-delay="0.2s" data-wow-duration="1.3s">
-                    <div class="header__logo"></div>
-
-                </div>
-                <div class="header__top-cols">
-                    <a class="header__phone">info@webaltay.ru</a>
-                </div>
-            </div>
-            </section>
-            <section class="breadcrumb-box">
-            <div class="conteiner">
-                <ol class="breadcrumb">
-                    <li>
-                        <a href="\">Главная</a>
-                    </li>
-                    \<li class="breadcrumb__active active">Новости</li>
-                </ol>
-            </div>
-
-            </section>
+            <section class="top-menu-box">
+					<div class="conteiner">
+						<div class="top-menu">
+							<a href="#" class="top-menu__button">
+								<img src="images/menu-button.svg" alt="" />
+							</a>
+							<ul class="top-menu__items">
+								<li class="top-menu__item">
+									<a href="" class="top-menu__item-link">Первая</a></li>
+								<li class="top-menu__item"><a href="" class="top-menu__item-link">Вторая</a></li>
+								<li class="top-menu__item"><a href="" class="top-menu__item-link">Третья</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="header-box">
+					<div class="conteiner conteiner_flex">
+						<div class="header__top-cols">
+							<a href="/" class="header__logo">
+								<img src="images/logo.svg" alt="">
+							</a>
+						</div>
+						<div class="header__top-cols">
+							<a class="header__phone">info@webaltay.ru</a>
+						</div>
+					</div>
+					<div class="header__hr"></div>
+				</section>
             <section class="section_white">
             <div class="conteiner conteiner_flex">
 
@@ -202,5 +216,5 @@
     </section>
 </div>
 </body>
-	<script src="script/myscript.js"></script>
+	<script src="script/paralax.js"></script>
 </html>

@@ -17,8 +17,10 @@ ul li {
 	/* letter-spacing: normal;*/
 }
 
+
 p {}
 .zagolovok {
+	/*opacity: 0;*/
 	font-size: 2.8em;
 	line-height: 1em;
 	text-align: center;
@@ -91,6 +93,8 @@ p {}
 }
 .header__zagolovok {
 	display: block;
+	opacity: 0;
+	transition: $transition;
 	@include text(3em,
 	1.5em);
 	margin-top: 40px;
@@ -124,4 +128,12 @@ p {}
 
 .header__spisok {
 	color: $dark-gray;
+}
+.footer__zagolovok {
+	color: #fff;
+	display: block;
+	@media (max-width: $planshet) {
+		text-align: center;
+		margin-bottom: 10px;
+	}
 }
