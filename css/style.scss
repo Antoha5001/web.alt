@@ -717,6 +717,7 @@ li.breadcrumb__active {
 	color: #fff;
 	/* align-self: flex-end;*/
 	min-height: 200px;
+	padding: 20px 0;
 }
 
 .base-block__items {
@@ -1157,6 +1158,10 @@ li.breadcrumb__active {
 	display: inline;
 }
 
+//Browsers section
+.browser-box, .tools-box{
+	padding: 20px 0 40px;
+}
 
 .hidden {
 	display: none;

@@ -689,7 +689,8 @@ li.breadcrumb__active {
   background: white;
   color: #fff;
   /* align-self: flex-end;*/
-  min-height: 200px; }
+  min-height: 200px;
+  padding: 20px 0; }
 
 .base-block__items {
   display: -webkit-box;
@@ -1079,6 +1080,9 @@ li.breadcrumb__active {
 .opinion-box__opinion_bold {
   font-weight: bold;
   display: inline; }
+
+.browser-box, .tools-box {
+  padding: 20px 0 40px; }
 
 .hidden {
   display: none; }
