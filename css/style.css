@@ -117,6 +117,54 @@ ul li {
       text-align: center;
       margin-bottom: 10px; } }
 
+.blog-post {
+  width: 100%;
+  margin: 20px 0 40px; }
+  .blog-post__image {
+    width: 300px;
+    height: 210px;
+    float: left;
+    background: grey;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    margin: 0px 20px 7px 0; }
+  .blog-post__text {
+    line-height: 1.2; }
+  .blog-post h2 a {
+    font-size: 26px;
+    color: #F5001F; }
+  .blog-post p {
+    font-size: 16px;
+    margin-top: 1em; }
+  .blog-post__hr {
+    width: 100%;
+    height: 1px;
+    background: #efeeee;
+    margin-top: 20px; }
+  .blog-post__button {
+    background: #F5001F;
+    border-bottom: 3px solid #005c3a;
+    padding: 5px 10px;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    margin: 20px auto 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    left: 50%;
+    transition: background .5s;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    transition: all .4s;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5); }
+    .blog-post__button:hover {
+      background: #1ab73d;
+      transform: scale(1.1) translate(0, -5px);
+      box-shadow: 0 15px 10px -8px rgba(0, 0, 0, 0.5); }
+
 * {
   margin: 0;
   padding: 0;
