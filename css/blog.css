@@ -1,21 +1,39 @@
 /*
-Error: Undefined variable: "$dark-gray".
-        on line 3 of D:\Cloud\GitHub\web\css\blog.scss
+Error: Undefined mixin 'bradius'.
+        on line 9 of E:\OpenServer2\OpenServer\domains\web\css\blog.scss, in `bradius'
+        from line 9 of E:\OpenServer2\OpenServer\domains\web\css\blog.scss
 
-1: a {
-2: 	text-decoration: none;
-3: 	color: $dark-gray;
-4: }
-5: 
-6: img {
-7: 	vertical-align: middle;
-8: 	border: none;
+4:     &__image{
+5:         width: 300px;
+6:         height: 210px;
+7:         float: left;
+8:         background: grey;
+9:         @include bradius(2px);
+10:         margin: 0px 20px 7px 0;
+11:     }
+12:     &__text{
+13:         line-height: 1.2;
+14:     }
 
 Backtrace:
-D:\Cloud\GitHub\web\css\blog.scss:3
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
+E:\OpenServer2\OpenServer\domains\web\css\blog.scss:9:in `bradius'
+E:\OpenServer2\OpenServer\domains\web\css\blog.scss:9
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
@@ -58,4 +76,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$dark-gray\".\A         on line 3 of D:\Cloud\GitHub\web\css\blog.scss\A \A 1: a {\A 2: 	text-decoration: none;\A 3: 	color: $dark-gray;\A 4: }\A 5: \A 6: img {\A 7: 	vertical-align: middle;\A 8: 	border: none;"; }
+  content: "Error: Undefined mixin 'bradius'.\A         on line 9 of E:\OpenServer2\OpenServer\domains\web\css\blog.scss, in `bradius'\A         from line 9 of E:\OpenServer2\OpenServer\domains\web\css\blog.scss\A \A 4:     &__image{\A 5:         width: 300px;\A 6:         height: 210px;\A 7:         float: left;\A 8:         background: grey;\A 9:         @include bradius(2px);\A 10:         margin: 0px 20px 7px 0;\A 11:     }\A 12:     &__text{\A 13:         line-height: 1.2;\A 14:     }"; }
