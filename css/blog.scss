@@ -6,17 +6,27 @@
 			flex-direction: column;
 		}
     &__image{
+		display: block;
         width: 300px;
         height: auto;
         float: left;
         background: grey;
         @include bradius(2px);
+		overflow: hidden;
         margin: 0px 20px 7px 0;
 		@media (max-width: $planshet) {			
         	width: 100%;
 			float: none;
 			order: 1;
 		}
+		img{
+			transition: all .5s;
+		overflow: hidden;
+		}
+		img:hover{
+			transform: scale(1.1) translate(0, -10px);
+		}
+		
     }
     &__text{
         line-height: 1.2;
@@ -32,6 +42,9 @@
         font-size: 26px;
         color: $magenta;
         line-height: 1.2;
+		&:hover{
+			text-decoration: underline;
+		}
     }
     p{
         font-size: 16px;
@@ -76,4 +89,41 @@
 		box-shadow: 0 15px 10px -8px rgba(0,0,0,0.5);
 	}
 }
+}
+.blog{
+	h1{
+		line-height: 1.2;
+		color: $magenta;
+	}
+	h2{
+		margin-bottom: 1em;
+		font-size: 23px;
+	}
+	p{
+		margin-bottom: 20px;
+		font-size: 18px;
+		line-height: 1.4;
+		a{
+			color: $magenta;
+		}
+		a:hover{
+			text-decoration: underline;
+		}
+	}
+}
+.video-container{
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+	margin-bottom: 40px;
+    @include bradius(2px);
+	iframe{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
 }
