@@ -17,10 +17,7 @@
 	<script src="script/wow.min.js"></script>
 	<script src="script/jquery.magnific-popup.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css" />
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mystyle.min.css">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -39,7 +36,7 @@
 		new WOW().init();
 	</script>
 	<script type="text/javascript">
-		$(document).ready(function () {
+		$(document).ready(function() {
 			$("#popup").validate({
 				rules: {
 					name: {
@@ -167,32 +164,31 @@
 				</div>
 			</section>
 			<section class="tools-box" data-section="tools-box">
-				<div class="conteiner conteiner_flex">
-					<h2 class="zagolovok wow fadeInLeft" data-wow-offset="100" data-wow-duration="1.3s">Мы используем:</h2>
-					<div class="base-block__item">
-						<div class="base-block__icons">
-							<img src="images/html5.png" alt="" />
+				<div class="wrapper">
+					<div class="row">
+						<div class="col col-lg-12">
+							<h2 class="zagolovok wow fadeInLeft" data-wow-offset="100" data-wow-duration="1.3s">Мы используем:</h2></div>
+						<div class="base-block__item col col-lg-3 col-md-6">
+							<div class="base-block__icons">
+								<img src="images/html5.svg" alt="" />
+							</div>
+							<!--<p class="base-block__text">123</p>-->
 						</div>
-						<p class="base-block__zagolovok">HTML5</p>
-						<!--<p class="base-block__text">123</p>-->
-					</div>
-					<div class="base-block__item">
-						<div class="base-block__icons">
-							<img src="images/scss.png" alt="" />
+						<div class="base-block__item col col-lg-3 col-md-6">
+							<div class="base-block__icons">
+								<img src="images/sass.svg" alt="" />
+							</div>
 						</div>
-						<p class="base-block__zagolovok">SCSS</p>
-					</div>
-					<div class="base-block__item">
-						<div class="base-block__icons">
-							<img src="images/modx.png" alt="" />
+						<div class="base-block__item col col-lg-3 col-md-6">
+							<div class="base-block__icons">
+								<img src="images/modx.svg" alt="" />
+							</div>
 						</div>
-						<p class="base-block__zagolovok">MODX CMS</p>
-					</div>
-					<div class="base-block__item">
-						<div class="base-block__icons">
-							<img src="images/js.png" alt="" />
+						<div class="base-block__item col col-lg-3 col-md-6">
+							<div class="base-block__icons">
+								<img src="images/js.svg" alt="" />
+							</div>
 						</div>
-						<p class="base-block__zagolovok">JavaScript</p>
 					</div>
 				</div>
 			</section>
@@ -211,32 +207,39 @@
 				</div>
 			</section>
 			<section class="browser-box">
-				<div class="conteiner conteiner_flex">
-					<h2 class="zagolovok wow fadeInLeft" data-wow-offset="100" data-wow-duration="1.3s">Мы делаем сайты под <span class="zagolovok_green">современные браузеры</span></h2>
-					<div class="base-block__item">
-						<div class="base-block__icons">
-							<img src="images/Chrome.png" alt="" />
+				<div class="wrapper">
+					<div class="row">
+						<div class="col col-lg-12">
+							<h2 class="zagolovok wow fadeInLeft" data-wow-offset="100" data-wow-duration="1.3s">Мы делаем сайты под <span class="zagolovok_green">современные браузеры</span></h2>
 						</div>
-						<p class="base-block__zagolovok">Google chrome</p>
-					</div>
-					<div class="base-block__item">
-						<div class="base-block__icons">
-							<img src="images/opera.png" alt="" />
+						<div class="base-block__item col col-lg-3 col-md-6 col-xs-12">
+							<div class="base-block__icons">
+								<img src="images/chrome.svg" alt="" />
+							</div>
+							<p class="base-block__zagolovok">Google chrome</p>
 						</div>
-						<p class="base-block__zagolovok">Opera</p>
-					</div>
-					<div class="base-block__item">
-						<div class="base-block__icons">
-							<img src="images/safari.png" alt="" />
+						<div class="base-block__item col col-lg-3 col-md-6 col-xs-12">
+							<div class="base-block__icons">
+								<img src="images/opera.svg" alt="" />
+							</div>
+							<p class="base-block__zagolovok">Opera</p>
 						</div>
-						<p class="base-block__zagolovok">Safari</p>
-					</div>
-					<div class="base-block__item">
-						<div class="base-block__icons">
-							<img src="images/firefox.png" alt="" />
+						<div class="base-block__item col col-lg-3 col-md-6 col-xs-12">
+							<div class="base-block__icons">
+								<img src="images/safari.png" alt="" />
+							</div>
+							<p class="base-block__zagolovok">Safari</p>
 						</div>
-						<p class="base-block__zagolovok">Firefox</p>
+						<div class="base-block__item col col-lg-3 col-md-6 col-xs-12">
+							<div class="base-block__icons">
+								<img src="images/firefox.png" alt="" />
+							</div>
+							<p class="base-block__zagolovok">Firefox</p>
+						</div>
 					</div>
+
+
+				</div>
 			</section>
 			<section class="portfolio-box portfolio-box_green">
 				<div class="conteiner conteiner_flex">
@@ -252,26 +255,26 @@
 				</div>
 			</section>
 			<section class="table-box">
-			<div class="conteiner conteiner_column">
-			  <h2 class="zagolovok wow fadeIn" data-wow-offset="200" data-wow-duration="1.3s"><a class="link" href="domenyi/">Тарифы на домены</a></h2>
-				<table class="table">
-					<tr>
-						<th class="table__th"><span>Доменная зона</span></th>
-						<th class="table__th"><span>Цена домена у нас</span></th>
-						<th class="table__th"><span>Цена домена у регистратора</span></th>
-					</tr>
-					<tr>
-						<td class="table__td"><span>.ru</span></td>
-						<td class="table__td table__wa table__td_center"><span>390 руб.</span></td>
-						<td class="table__td table__td_center"><span>590 руб.</span></td>
-					</tr>
-					<tr>
-						<td class="table__td"><span>.com</span></td>
-						<td class="table__td table__wa table__td_center"><span>390 руб.</span></td>
-						<td class="table__td table__td_center"><span>590 руб.</span></td>
-					</tr>
-				</table>
-				<a class="button" href="#">Купить домен</a>
+				<div class="conteiner conteiner_column">
+					<h2 class="zagolovok wow fadeIn" data-wow-offset="200" data-wow-duration="1.3s"><a class="link" href="domenyi/">Тарифы на домены</a></h2>
+					<table class="table">
+						<tr>
+							<th class="table__th"><span>Доменная зона</span></th>
+							<th class="table__th"><span>Цена домена у нас</span></th>
+							<th class="table__th"><span>Цена домена у регистратора</span></th>
+						</tr>
+						<tr>
+							<td class="table__td"><span>.ru</span></td>
+							<td class="table__td table__wa table__td_center"><span>390 руб.</span></td>
+							<td class="table__td table__td_center"><span>590 руб.</span></td>
+						</tr>
+						<tr>
+							<td class="table__td"><span>.com</span></td>
+							<td class="table__td table__wa table__td_center"><span>390 руб.</span></td>
+							<td class="table__td table__td_center"><span>590 руб.</span></td>
+						</tr>
+					</table>
+					<a class="button" href="#">Купить домен</a>
 				</div>
 			</section>
 		</div>
