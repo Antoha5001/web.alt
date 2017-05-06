@@ -8,11 +8,15 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 -15px;
-	border: 1px solid black;
+	//border: 1px solid black;
 	//margin: auto;
 }
+.row_center{
+	justify-content: center;
+	text-align: center;
+}
 .col{
-	min-height: 100px;
+	//min-height: 100px;
 	width: calc(8.3333% - 30px);
 	box-sizing: border-box;
 	text-align: center;

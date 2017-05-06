@@ -318,6 +318,7 @@ li.breadcrumb__active {
 
 .header__logo {
 	display: block;
+	cursor: pointer;
 	margin: 20px 0;
 	height: auto;
 	width: 340px;
@@ -336,6 +337,7 @@ li.breadcrumb__active {
 
 .header__phone {
 	display: block;
+	cursor: pointer;
 	transition: $transition;
 	opacity: 0;
 	text-align: right;
@@ -374,16 +376,13 @@ li.breadcrumb__active {
 	background:  url("../images/fon.png") ;
 }
 
-.offer {
-	@include flexbox(row,
-	wrap);
-}
 
 .offer__left {
-	flex: 1 1 550px;
+	//flex: 1 1 550px;
+	text-align: left;
 	@media (max-width: $planshet) {
 		order: 1;
-		flex: 1 1 100%;
+		//flex: 1 1 100%;
 	}
 }
 
@@ -460,9 +459,9 @@ li.breadcrumb__active {
 	opacity: 0;
 	transition: $transition;
 	background: url("../images/forma_fon.png") repeat-x;
-	max-width: 100%;
+	max-width: 380px;
 	min-height: 420px;
-	margin-top: 120px;
+	margin: 120px auto 0;
 	background-position: bottom;
 	@include bradius(3px);
 	@include shadow();
@@ -471,6 +470,9 @@ li.breadcrumb__active {
 		height: auto;
 		min-height: 250px;
 		margin-top: 0;
+	}
+	@media (max-width: $planshet){
+		max-width: 100%
 	}
 }
 
@@ -686,7 +688,7 @@ li.breadcrumb__active {
 }
 
 .base-block__item {
-	border: 1px solid black;
+	//border: 1px solid black;
 	opacity: 0;
 	padding: 20px;
 	transition: $transition;
@@ -697,7 +699,7 @@ li.breadcrumb__active {
 }
 
 .base-block__icons {
-	width: 100%;
+	max-width: 90px;
 	//height: 90px;
 	margin: auto;
 	/*border-bottom: 2px solid #FFD608;*/
@@ -743,7 +745,7 @@ li.breadcrumb__active {
 .portfolio-box {
 	min-height: 75px;
 	background: white;
-	padding: 20px 0 40px;
+	padding: 0 0 20px;
 }
 
 .portfolio-box_gray {
@@ -756,10 +758,11 @@ li.breadcrumb__active {
 
 .portfolio__items {
 	@include bradius(2px);
+	margin: 0 auto;
 	position: relative;
-	flex: 0 1 250px;
-	min-height: 250px;
-	margin: 20px 20px 0;
+	padding: 10px;
+	max-width: 200px;
+	min-height: 200px;
 	background: white;
 	transition: all .5s;
 	border: 1px solid $gray;
@@ -767,7 +770,6 @@ li.breadcrumb__active {
 	//padding: 25px;
 	//@include shadow();
 	@media (max-width: $planshet) {
-		flex: 1 1 calc(50%-20px);
 	}
 }
 
@@ -786,10 +788,7 @@ li.breadcrumb__active {
 .portfolio__img {
 	opacity: 0;
 	position: absolute;
-	top: 25px;
-	left: 25px;
-	margin: auto;
-	width: 200px;
+	width: calc(100% - 20px);
 	display: block;
 	overflow: hidden;
 	transition: all .5s;
@@ -800,10 +799,8 @@ li.breadcrumb__active {
 .portfolio__logo {
 	opacity: 100;
 	position: absolute;
-	top: 25px;
-	left: 25px;
 	margin: auto;
-	width: 200px;
+	width: calc(100% - 20px);
 	display: block;
 	overflow: hidden;
 	transition: all .5s;
@@ -847,11 +844,11 @@ li.breadcrumb__active {
 
 .table-box {
 	background: white;
-	padding: 20px 0 20px;
+	padding: 0 0 20px;
 }
 
 .table {
-	margin: auto;
+	margin: 1em auto;
 }
 
 .table__th,
@@ -1117,8 +1114,8 @@ li.breadcrumb__active {
 
 //Browsers section
 .browser-box, .tools-box{
-	padding: 20px 0 40px;
-	border: 1px solid black;
+	padding: 0 0 40px;
+	//border: 1px solid black;
 }
 
 .hidden {
